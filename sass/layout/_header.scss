@@ -1,0 +1,32 @@
+.header {
+  background-image: linear-gradient(to left, black, rgba(255, 255, 255, 0) 90%),
+    url(../images/banner-pic.png);
+
+  background-size: cover;
+  background-position: top;
+  height: 95vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 95vh);
+  z-index: 1;
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(10%, -50%);
+    color: $color-primary-white;
+    text-align: center;
+  }
+
+  &__logo {
+    width: 15rem;
+    &-box {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+    }
+
+    &-box:hover & {
+      animation: moveInLeft 1s ease-out;
+    }
+  }
+}
