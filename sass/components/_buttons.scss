@@ -8,6 +8,7 @@
     display: inline-block;
     transition: all 0.2s;
     position: relative;
+    font-weight: bold;
   }
 
   &--white {
@@ -46,8 +47,8 @@
     transition: all 0.4s;
   }
 
-  &--animated {
-    animation: moveInBottom 0.5s ease-out 0.75s;
-    animation-fill-mode: backwards; /*applies the style of animation at 0% before animation starts*/
-  }
+  // &--animated {
+  //   animation: moveInBottom 0.5s ease-out 0.75s;
+  //   animation-fill-mode: backwards; /*applies the style of animation at 0% before animation starts*/
+  // }
 }

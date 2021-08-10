@@ -27,6 +27,30 @@
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.heading-primary--main {
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+
+.heading-primary--date {
+  animation: fadeIn 0.6s ease-out 1.5s;
+  animation-fill-mode: backwards; }
+
+.heading-primary--sub {
+  animation: moveInRight 1s ease-out 2.5s;
+  animation-fill-mode: backwards; }
+
+.btn--animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+  /*applies the style of animation at 0% before animation starts*/ }
+
 *,
 *::after,
 *::before {
@@ -41,25 +65,28 @@ body {
   padding: 0px; }
 
 body {
-  font-family: "Noto Sans";
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400px;
   font-size: 1.6rem;
-  line-height: 1.7;
+  line-height: 1.4;
   padding: 0px; }
 
 .heading-primary--main {
   display: block;
-  font-size: 5rem;
-  text-transform: uppercase;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out; }
+  font-size: 6rem;
+  text-transform: uppercase; }
+
+.heading-primary--date {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem; }
 
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
   text-align: center;
-  animation: moveInRight 1s ease-out;
+  font-weight: normal;
   margin-bottom: 5rem; }
 
 .btn:link, .btn:visited {
@@ -68,7 +95,8 @@ body {
   border-radius: 10rem;
   display: inline-block;
   transition: all 0.2s;
-  position: relative; }
+  position: relative;
+  font-weight: bold; }
 
 .btn--white {
   background-color: goldenrod;
@@ -98,11 +126,6 @@ body {
   z-index: -1;
   transition: all 0.4s; }
 
-.btn--animated {
-  animation: moveInBottom 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
-  /*applies the style of animation at 0% before animation starts*/ }
-
 .header {
   background-image: linear-gradient(to left, black, rgba(255, 255, 255, 0) 90%), url(../images/banner-pic.png);
   background-size: cover;
@@ -113,7 +136,7 @@ body {
   .header__text-box {
     position: absolute;
     top: 40%;
-    left: 50%;
+    left: 55%;
     transform: translate(10%, -50%);
     color: white;
     text-align: center; }
