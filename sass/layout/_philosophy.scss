@@ -1,0 +1,33 @@
+.quote-section-container {
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: lightpink;
+  width: 100%;
+}
+////////////////////////////////////
+///format the quote box, center text, colour heading with yellow gradient, add yellow transparent overlay behind the quote
+
+.quote-section__box {
+  max-width: 50rem;
+}
+.heading-section {
+}
+.quote {
+}
+.video-box {
+}
+
+.image-box {
+  &__photo {
+    width: 40rem;
+  }
+}
+
+.philosophy {
+  &__heading {
+  }
+  &__text {
+  }
+}

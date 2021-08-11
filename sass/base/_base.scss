@@ -13,3 +13,13 @@ html {
 body {
   padding: 0px;
 }
+
+.global-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.main-section-container {
+  display: flex;
+}
