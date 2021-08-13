@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: top;
   height: 95vh;
-  //clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 95vh);
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 95vh);
   z-index: 1;
 
   &__text-box {

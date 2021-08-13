@@ -1,22 +1,25 @@
-.quote-section-container {
-  margin-top: 20rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: lightpink;
-  width: 100%;
-}
 ////////////////////////////////////
 ///format the quote box, center text, colour heading with yellow gradient, add yellow transparent overlay behind the quote
 
 .quote-section__box {
   max-width: 50rem;
+  //background-color: lightgreen;
+  margin-right: 10rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .heading-section {
+  margin-top: 1.5rem;
+  font-style: italic;
 }
 .quote {
+  text-align: center;
+  line-height: 150%;
+  font-size: 1.9rem;
 }
 .video-box {
+  margin-left: 5rem;
 }
 
 .image-box {
