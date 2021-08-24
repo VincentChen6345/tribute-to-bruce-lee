@@ -1,0 +1,22 @@
+.cta-section-container {
+  background-image: linear-gradient(
+    to bottom right,
+    yellow,
+    $color-primary-gold
+  );
+  height: 100rem;
+  transform: translateY(-10%);
+  position: relative;
+  z-index: -20;
+}
+
+.description {
+  margin-top: 20rem;
+
+  // CONTINUE TO STYLE CTA SECTION, ADD SMALL CONTAINER WITH BOX SHADOW
+  &__text {
+  }
+}
+
+.btn-container {
+}

@@ -135,10 +135,10 @@ body {
   position: relative;
   font-weight: bold; }
 
-.btn--white {
+.btn--gold {
   background-color: goldenrod;
   color: black; }
-  .btn--white::after {
+  .btn--gold::after {
     background-color: goldenrod; }
 
 .btn:hover {
@@ -220,10 +220,21 @@ body {
   text-align: center; }
 
 .heading-primary__movie {
-  transform: translateY(13rem);
+  transform: translateY(11rem);
   text-transform: uppercase;
   display: inline-block;
+  padding: 0.5rem 2rem;
   background-color: rgba(218, 165, 32, 0.8); }
+
+.cta-section-container {
+  background-image: linear-gradient(to bottom right, yellow, goldenrod);
+  height: 100rem;
+  transform: translateY(-10%);
+  position: relative;
+  z-index: -20; }
+
+.description {
+  margin-top: 20rem; }
 
 .bg-video {
   position: absolute;
