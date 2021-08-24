@@ -4,4 +4,16 @@
   margin-top: 5rem;
 
   background: rgba(goldenrod, 0.2);
+  clip-path: polygon(0 0%, 100% 10%, 100% 90%, 0 100%);
+  text-align: center;
+}
+
+.heading-primary {
+  &__movie {
+    transform: translateY(13rem);
+    text-transform: uppercase;
+    display: inline-block;
+
+    background-color: rgba(goldenrod, 0.8);
+  }
 }

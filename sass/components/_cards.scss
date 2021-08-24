@@ -1,13 +1,18 @@
 .movie-cards {
-  height: 100%;
+  height: 0;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+
+  transform: translateY(20rem);
 
   //////////STYLE THE MOVIE CARDS, CLIP THE VIDEO BACKGROUND INTO SHAPE!!
 }
 .card {
+  width: 30rem;
+  height: 40rem;
+  cursor: pointer;
+
   &__1 {
   }
 
@@ -19,11 +24,28 @@
 .movie-title {
 }
 
-.picture {
+.card__picture {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease;
   &--1 {
+    background-image: url(../../images/enter-the-dragon.jpeg);
   }
   &--2 {
+    background-image: url(../../images/fist-of-fury.jpg);
   }
   &--3 {
+    background-image: url(../../images/the-way-of-the-dragon.jpg);
   }
+}
+
+//hover effects
+.card__picture:hover {
+  transform: scale(1.1);
+  outline-offset: 2rem;
+  outline: solid 1rem goldenrod;
+}
+.movie-cards:hover .card__picture:not(:hover) {
+  transform: scale(0.9);
 }

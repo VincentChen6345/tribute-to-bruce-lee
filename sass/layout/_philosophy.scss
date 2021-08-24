@@ -1,6 +1,9 @@
 ////////////////////////////////////
 ///format the quote box, center text, colour heading with yellow gradient, add yellow transparent overlay behind the quote
 
+.quote-section-container {
+  margin-top: 5%;
+}
 .quote-section__box {
   max-width: 50rem;
   //background-color: lightgreen;

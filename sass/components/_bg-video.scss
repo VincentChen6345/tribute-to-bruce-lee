@@ -9,6 +9,7 @@
   overflow: hidden;
 
   mix-blend-mode: overlay;
+  //clip-path: polygon(0 0%, 100% 10%, 100% 90%, 0 100%);
 
   &__content {
     height: 100%;
