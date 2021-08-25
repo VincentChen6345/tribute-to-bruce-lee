@@ -8,17 +8,21 @@
 
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
   padding: 0px;
+  margin: 0;
+  box-sizing: inherit;
 }
 
 .global-container {
   display: flex;
   flex-direction: column;
   border: solid 0.5rem rgba(goldenrod, 1);
-  height: 1000rem;
+
+  width: 100%;
 }
 
 .main-section-container {

@@ -1,22 +1,91 @@
 .cta-section-container {
-  background-image: linear-gradient(
-    to bottom right,
-    yellow,
-    $color-primary-gold
-  );
+  // //background-image: linear-gradient(
+  //   to bottom right,
+  //   yellow,
+  //   $color-primary-gold
+  // );
   height: 100rem;
   transform: translateY(-10%);
-  position: relative;
-  z-index: -20;
+
+  display: flex;
+  justify-content: center;
+}
+
+.images {
+  width: 60%;
+  height: 100%;
+
+  &__shannon {
+    background-image: url(../../images/portrait.jpeg);
+    height: 100%;
+    background-size: cover;
+
+    background-position-x: -35rem;
+  }
 }
 
 .description {
   margin-top: 20rem;
 
+  width: 80%;
+  height: 60rem;
+  display: flex;
+  box-shadow: 0 1rem 4rem rgba(black, 0.4);
+  overflow: hidden;
+
   // CONTINUE TO STYLE CTA SECTION, ADD SMALL CONTAINER WITH BOX SHADOW
+
+  &__box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 0rem 3rem;
+    background-image: linear-gradient(
+      to bottom right,
+      yellow,
+      $color-primary-gold
+    );
+
+    &-overlay {
+      background-color: rgba(white, 0.8);
+      border-radius: 5px;
+      height: 90%;
+      margin-bottom: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 2rem;
+    }
+  }
   &__text {
+    font-size: 1.7rem;
   }
 }
 
-.btn-container {
+.heading-primary__cta {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  background-color: rgba(white, 0.8);
+  border-radius: 5px;
+  display: inline-block;
+  padding: 0.5rem 3rem;
+}
+
+.btn--cta {
+  position: absolute;
+  z-index: 10;
+  bottom: -8rem;
+  right: 0rem;
+}
+
+.background-image {
+  position: absolute;
+  width: 200%;
+  height: auto;
+  bottom: -25rem;
+  right: -60rem;
+  opacity: 0.2;
 }
